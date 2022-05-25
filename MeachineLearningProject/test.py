@@ -21,7 +21,7 @@ x = dataset.iloc[:,:13]
 x = x.loc[:, FeatureColumns]
 
 # 80% train 20% test, seed 100
-X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.2, shuffle=True)
+X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.35, shuffle=True)
 
 # random forest with 250 estimators
 RF = RandomForestClassifier(n_estimators=250)
